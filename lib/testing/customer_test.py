@@ -23,8 +23,8 @@ class TestCustomer:
         customer = Customer('Steve')
         assert (isinstance(customer.name, str))
 
-        # with pytest.raises(Exception):
-        #     customer.name = 1
+        with pytest.raises(Exception):
+            customer.name = 1
 
     def test_customer_name_length(self):
         '''customer name is between 1 and 15 characters'''
